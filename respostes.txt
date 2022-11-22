@@ -4,5 +4,7 @@
 4- mkdir si
 5- mv si.txt /home/carlos/examen/si
 6- cat alumno.txt | grep -v ^NOM | awk '{print $1,$2"-"$5}'
-7- nl alumno.txt | grep -c González
+7- nl alumno.txt | grep -c González | uniq
 8- cat alumno.txt | sed 's/Vicente/Pepe/'
+9- cat alumno.txt | awk '{if($4 >= 2010 && $4 <= 2019) print($1, $2, $3, $4, $5)}'
+10- 10-grep ^J alumnos.txt | awk '{print $1 " " $2}' | uniq
