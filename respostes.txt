@@ -2,3 +2,4 @@
 2- cd /home/carlos/examen/
 3- nl alumno.txt | grep SI | awk '{print $1}? > si.txt
 mkdir si
+mv si.txt /home/carlos/examen/si
