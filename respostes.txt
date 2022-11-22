@@ -4,4 +4,5 @@
 4- mkdir si
 5- mv si.txt /home/carlos/examen/si
 6- cat alumno.txt | grep -v ^NOM | awk '{print $1,$2"-"$5}'
-7- cat alumno.txt | grep gonzález
+7- nl alumno.txt | grep -c González
+8- cat alumno.txt | sed 's/Vicente/Pepe/'
