@@ -1,5 +1,6 @@
 1- mkdir /home/carlos/examen
 2- cd /home/carlos/examen/
 3- nl alumno.txt | grep SI | awk '{print $1}? > si.txt
-mkdir si
-mv si.txt /home/carlos/examen/si
+4- mkdir si
+5- mv si.txt /home/carlos/examen/si
+6- cat alumno.txt | awk '{print $1,$2,$5}' | sed 's/ /-/g'
